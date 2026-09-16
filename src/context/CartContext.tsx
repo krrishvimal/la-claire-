@@ -169,26 +169,26 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const checkoutCartViaWhatsApp = () => {
     if (cart.length === 0) return;
 
-    let itemsText = cart
+    const itemsText = cart
       .map(
         (item, idx) =>
-          (idx + 1) + '. *' + item.product.name + '* (x' + item.quantity + ')\n' +
-          '   � Size: ' + item.selectedSize + '\n' +
-          '    Size: ' + item.selectedSize + '\n' +
-          '    Flavour: ' + item.selectedFlavour +
-          (item.customization ? '\n    Note: ' + item.customization : '') + '\n' +
-          '    Price: ?' + (item.unitPrice * item.quantity)
+          `${idx + 1}. *${item.product.name}* (x${item.quantity})\n` +
+          `   • Size: ${item.selectedSize}\n` +
+          `   • Flavour: ${item.selectedFlavour}` +
+          (item.customization ? `\n   • Note / Message: "${item.customization}"` : '') +
+          `\n   • Price: ₹${(item.unitPrice * item.quantity).toLocaleString('en-IN')}`
       )
       .join('\n\n');
 
     const total = getCartTotal();
 
-    const msg = '✨ *Order Enquiry – La Claire Patisserie* ✨\n\n' +
-      'Hello! I would like to order the following from your website:\n\n' +
-      itemsText + '\n\n' +
-      '💎 *Estimated Subtotal:* ₹' + total + '\n' +
-      '📍 *Delivery Location:* Delhi NCR\n\n' +
-      'Could you please confirm slot availability and delivery details for this order?';
+    const msg =
+      `✨ *Order Enquiry – La Claire Patisserie* ✨\n\n` +
+      `Hello! I would like to order the following from your website:\n\n` +
+      `${itemsText}\n\n` +
+      `💎 *Estimated Subtotal:* ₹${total.toLocaleString('en-IN')}\n` +
+      `📍 *Delivery Location:* Delhi NCR\n\n` +
+      `Could you please confirm slot availability and delivery details for this order? Thank you!`;
 
     const url = createWhatsAppUrl(msg);
     window.open(url, '_blank');
