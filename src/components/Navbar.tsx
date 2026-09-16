@@ -211,7 +211,7 @@ export function Navbar() {
 
               {/* Primary Order CTA */}
               <a
-                href={createWhatsAppUrl(generateGeneralEnquiryMessage('Header Order Enquiry'))}
+                href={createWhatsAppUrl(generateGeneralEnquiryMessage('placing a direct order'))}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden sm:inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white text-xs font-sans font-semibold tracking-wider uppercase px-4 py-2.5 rounded-full shadow-sm hover:shadow transition-all hover:scale-[1.02]"
@@ -272,7 +272,7 @@ export function Navbar() {
             {/* Mobile CTAs */}
             <div className="pt-3 flex flex-col gap-2.5">
               <a
-                href={createWhatsAppUrl(generateGeneralEnquiryMessage('Mobile Menu WhatsApp Order'))}
+                href={createWhatsAppUrl(generateGeneralEnquiryMessage('placing a direct order'))}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full min-h-[44px] flex items-center justify-center gap-2 bg-brand-500 text-white py-3 rounded-full text-xs font-sans font-semibold tracking-wider uppercase shadow-md active:scale-98 transition-transform"

@@ -52,7 +52,7 @@ export function Hero() {
               </Link>
 
               <a
-                href={createWhatsAppUrl(generateGeneralEnquiryMessage('Hero Direct Order'))}
+                href={createWhatsAppUrl(generateGeneralEnquiryMessage('placing a direct order for fresh desserts & cakes today'))}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-brand-500 hover:bg-brand-600 text-white text-xs font-sans font-semibold tracking-widest uppercase shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2"

@@ -56,7 +56,7 @@ export default function ContactPage() {
 
             <div className="pt-4">
               <a
-                href={createWhatsAppUrl(generateGeneralEnquiryMessage('Contact Page Enquiry'))}
+                href={createWhatsAppUrl(generateGeneralEnquiryMessage('placing an order or custom consultation'))}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-brand-500 hover:bg-brand-600 text-white font-sans text-xs font-semibold tracking-wider uppercase py-3.5 rounded-xl shadow-md flex items-center justify-center gap-2 transition-all hover:scale-[1.01]"

@@ -37,7 +37,7 @@ export function Footer() {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href={createWhatsAppUrl(generateGeneralEnquiryMessage('Website Footer Hotline'))}
+                href={createWhatsAppUrl(generateGeneralEnquiryMessage('placing an order with La Claire'))}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-brand-500 hover:bg-brand-600 flex items-center justify-center text-white transition-all"

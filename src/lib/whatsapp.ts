@@ -77,7 +77,6 @@ ${params.specialRequests || 'Custom celebration cake with elegant floral & moder
 Looking forward to designing something sweet together!`;
 }
 
-export function generateGeneralEnquiryMessage(topic: string = 'General Enquiry'): string {
-  return `Hi La Claire Patisserie! ✨
-I was browsing your website and would love to enquire about ${topic}. Could you please share more details?`;
+export function generateGeneralEnquiryMessage(topic: string = 'placing an order'): string {
+  return `Hi Chef Anushka! ✨\n\nI was browsing your website (La Claire Patisserie) and would love to enquire about ${topic}.\n\nCould you please share availability and ordering details? 🍰`;
 }

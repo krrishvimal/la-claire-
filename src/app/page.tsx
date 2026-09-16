@@ -56,7 +56,7 @@ export default function HomePage() {
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href={createWhatsAppUrl(generateGeneralEnquiryMessage('Homepage Final CTA'))}
+              href={createWhatsAppUrl(generateGeneralEnquiryMessage('bespoke cakes and luxury dessert catering'))}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-3.5 rounded-full bg-brand-500 hover:bg-brand-600 text-white text-xs font-sans font-semibold uppercase tracking-widest shadow-xl transition-all flex items-center justify-center gap-2"

@@ -27,7 +27,7 @@ export function WhatsAppFloatingButton() {
               Planning a celebration or looking for bespoke gifting across Delhi NCR? Chat directly with our pastry team.
             </p>
             <a
-              href={createWhatsAppUrl(generateGeneralEnquiryMessage('Studio Chat Enquiry'))}
+              href={createWhatsAppUrl(generateGeneralEnquiryMessage('celebration orders and bespoke gifting'))}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center bg-brand-500 hover:bg-brand-600 text-white font-semibold py-2 rounded-xl transition-all shadow-sm"
