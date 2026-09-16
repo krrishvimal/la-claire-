@@ -12,45 +12,15 @@ import { createWhatsAppUrl, generateHamperOrderMessage } from '@/lib/whatsapp';
 type BoxPlan = {
   id: '4' | '6' | '8';
   name: string;
-  tagline: string;
   slots: number;
   price: number;
   serves: string;
-  image: string;
-  badge?: string;
 };
 
 const BOX_PLANS: BoxPlan[] = [
-  { 
-    id: '4', 
-    name: '4-PACK BOX', 
-    tagline: 'The Petite Parisian',
-    slots: 4, 
-    price: 1450, 
-    serves: '2-4 Guests',
-    image: '/images/cake2.webp',
-    badge: 'Classic Tasting'
-  },
-  { 
-    id: '6', 
-    name: '6-PACK BOX', 
-    tagline: 'Grand Keepsake',
-    slots: 6, 
-    price: 2150, 
-    serves: '4-6 Guests',
-    image: '/images/la_claire_hero.webp',
-    badge: 'Most Popular ⭐'
-  },
-  { 
-    id: '8', 
-    name: '8-PACK GRAND', 
-    tagline: 'The Royal Atelier',
-    slots: 8, 
-    price: 2850, 
-    serves: '6-10 Guests',
-    image: '/images/la_claire_story.webp',
-    badge: 'Ultimate Luxury'
-  },
+  { id: '4', name: '4-PACK', slots: 4, price: 1450, serves: '2-4 Guests' },
+  { id: '6', name: '6-PACK', slots: 6, price: 2150, serves: '4-6 Guests' },
+  { id: '8', name: '8-PACK GRAND', slots: 8, price: 2850, serves: '6-10 Guests' },
 ];
 
 export function HamperBuilder() {
@@ -287,114 +257,44 @@ export function HamperBuilder() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Top Header Card with Visual Box Size Cards (4, 6, 8) */}
+        {/* Top Header Card with Segmented Box Selector */}
         <div className="bg-white rounded-3xl p-5 sm:p-8 border border-brand-200 shadow-lg mb-8 sm:mb-10">
-          <div className="space-y-6">
+          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
             
-            {/* Title & Tagline */}
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div className="space-y-1.5">
-                <div className="inline-flex items-center gap-2 text-xs font-sans font-semibold uppercase tracking-widest text-brand-600">
-                  <Sparkles className="w-3.5 h-3.5 text-brand-500" />
-                  <span>Step 1: Choose Your Box Size</span>
-                </div>
-                <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-brand-900 font-normal flex items-center gap-2.5 sm:gap-3">
-                  <span>Build Your Own Hamper Box</span>
-                  <span className="text-xl sm:text-2xl">🎁</span>
-                </h2>
-                <p className="text-xs sm:text-sm text-brand-900/75 font-sans font-light max-w-2xl">
-                  Tap 4, 6, or 8 below to choose your keepsake box size, then curate your favorite French treats.
-                </p>
+            {/* Left Title & Tagline */}
+            <div className="space-y-1.5">
+              <div className="inline-flex items-center gap-2 text-xs font-sans font-semibold uppercase tracking-widest text-brand-600">
+                <Sparkles className="w-3.5 h-3.5 text-brand-500" />
+                <span>Exclusive Experience</span>
               </div>
-
-              {hasSelectedPlan && (
-                <div className="self-start sm:self-auto bg-brand-100 border border-brand-300 px-3 py-1.5 rounded-full flex items-center gap-1.5 text-xs font-sans font-bold text-brand-900 shadow-sm animate-fadeIn">
-                  <Check className="w-3.5 h-3.5 text-brand-700" />
-                  <span>{selectedPlan.name} Active</span>
-                </div>
-              )}
+              <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-brand-900 font-normal flex items-center gap-2.5 sm:gap-3">
+                <span>Build Your Own Hamper Box</span>
+                <span className="text-xl sm:text-2xl">🎁</span>
+              </h2>
+              <p className="text-xs sm:text-sm text-brand-900/75 font-sans font-light max-w-xl">
+                Curate a personalized assortment of our finest handcrafted patisserie in our signature Parisian lavender keepsake box.
+              </p>
             </div>
 
-            {/* 3 Visual Photo Cards for 4, 6, and 8 Pack */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-5">
+            {/* Right Box Size Plan Switcher */}
+            <div className="flex flex-wrap items-center gap-2 sm:gap-2.5">
               {BOX_PLANS.map((plan) => {
                 const isActive = hasSelectedPlan && selectedPlan.id === plan.id;
                 return (
                   <button
                     key={plan.id}
-                    type="button"
                     onClick={() => handleSelectPlan(plan)}
                     className={
-                      'group relative rounded-2xl p-3 sm:p-4 text-left transition-all duration-300 flex flex-col justify-between border-2 overflow-hidden ' +
+                      'px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-2xl text-[11px] sm:text-xs font-sans font-bold tracking-wider transition-all duration-300 shadow-sm flex items-center gap-1.5 sm:gap-2 ' +
                       (isActive
-                        ? 'bg-brand-900 text-cream-50 border-[#D8C7A0] shadow-xl ring-2 ring-[#D8C7A0]/60 scale-[1.02]'
-                        : 'bg-cream-50 hover:bg-white text-brand-900 border-brand-200/90 hover:border-brand-400 shadow-sm hover:shadow-md')
+                        ? 'bg-brand-900 text-cream-50 shadow-md ring-2 ring-brand-500 scale-[1.02] sm:scale-105'
+                        : 'bg-cream-50 hover:bg-brand-100 text-brand-900 border border-brand-200/80')
                     }
                   >
-                    {/* Badge */}
-                    {plan.badge && (
-                      <div className="absolute top-2.5 right-2.5 z-10">
-                        <span className={
-                          'text-[9px] sm:text-[10px] uppercase tracking-wider font-bold px-2.5 py-0.5 rounded-full shadow-md ' +
-                          (isActive
-                            ? 'bg-[#D8C7A0] text-brand-950 ring-1 ring-white/50'
-                            : 'bg-brand-200 text-brand-900')
-                        }>
-                          {plan.badge}
-                        </span>
-                      </div>
-                    )}
-
-                    {/* Picture */}
-                    <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden mb-3 bg-brand-100 shadow-inner">
-                      <Image
-                        src={plan.image}
-                        alt={plan.name}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      {/* Slot Count Pill on image */}
-                      <div className="absolute bottom-2 left-2 bg-[#2A1820]/80 backdrop-blur-sm border border-[#D8C7A0]/50 text-[#F5ECD7] px-2.5 py-0.5 rounded-md text-[11px] font-bold">
-                        {plan.slots} Treats Box
-                      </div>
-                    </div>
-
-                    <div>
-                      <div className="flex items-center justify-between gap-1">
-                        <h4 className="font-serif text-base sm:text-lg font-bold leading-snug">
-                          {plan.name}
-                        </h4>
-                        {isActive ? (
-                          <div className="w-5 h-5 rounded-full bg-[#D8C7A0] text-brand-950 flex items-center justify-center text-xs font-bold shadow">
-                            ✓
-                          </div>
-                        ) : (
-                          <span className="text-[10px] font-sans font-semibold uppercase tracking-wider text-brand-600 group-hover:text-brand-900">
-                            Tap to Select
-                          </span>
-                        )}
-                      </div>
-                      <p className={
-                        'text-[11px] font-sans mt-0.5 line-clamp-1 ' +
-                        (isActive ? 'text-brand-200' : 'text-brand-700')
-                      }>
-                        {plan.tagline} • {plan.serves}
-                      </p>
-                      <div className="mt-2 pt-2 border-t border-brand-200/50 flex items-baseline justify-between">
-                        <span className={
-                          'font-serif text-sm sm:text-base font-bold ' +
-                          (isActive ? 'text-[#D8C7A0]' : 'text-brand-900')
-                        }>
-                          {formatPrice(plan.price)}
-                        </span>
-                        <span className={
-                          'text-[10px] font-sans ' +
-                          (isActive ? 'text-brand-300' : 'text-brand-500')
-                        }>
-                          Incl. keepsake box & ribbon
-                        </span>
-                      </div>
-                    </div>
+                    <span>{plan.name}</span>
+                    <span className={isActive ? 'text-brand-300 font-normal' : 'text-brand-600 font-medium'}>
+                      ({formatPrice(plan.price)})
+                    </span>
                   </button>
                 );
               })}
