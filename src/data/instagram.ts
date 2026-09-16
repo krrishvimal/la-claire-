@@ -5,7 +5,7 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
   {
     id: 'ig-1',
     type: 'image',
-    mediaUrl: '/images/little slice of citrus swiss roll.webp',
+    mediaUrl: '/images/citrus_swiss_roll.webp',
     caption: 'Little slice of citrus perfection ? Soft chiffon rolled with freshly simmered Meyer lemon curd & vanilla cream. Delivering across Delhi NCR. ????',
     likes: '482',
     comments: '34',
@@ -14,7 +14,7 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
   {
     id: 'ig-2',
     type: 'image',
-    mediaUrl: '/images/cake1.jpg',
+    mediaUrl: '/images/cake1.webp',
     caption: 'Thoughtfully crafted for sweet milestones. Signature pastel lavender buttercream adorned with delicate blooms and gold leaf. ???',
     likes: '620',
     comments: '51',
@@ -32,7 +32,7 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
   {
     id: 'ig-4',
     type: 'image',
-    mediaUrl: '/images/chocolate with strawberry.jpg',
+    mediaUrl: '/images/chocolate_strawberry.webp',
     caption: 'Belgian chocolate dipped strawberries dusted with 24k gold leaf. The ultimate romantic gesture and luxury return favor. ????',
     likes: '512',
     comments: '42',
@@ -41,7 +41,7 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
   {
     id: 'ig-5',
     type: 'image',
-    mediaUrl: '/images/cake 2.jpg',
+    mediaUrl: '/images/cake2.webp',
     caption: 'Vintage piped dream ✨ Romantic ruffles, satin ribbons, and layered Belgian chocolate sponge inside. Direct inquiries welcome for custom cakes.',
     likes: '740',
     comments: '68',
@@ -50,7 +50,7 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
   {
     id: 'ig-6',
     type: 'image',
-    mediaUrl: '/images/792090809_18102240470260412_1110557466805258012_n.jpg',
+    mediaUrl: '/images/anushka_profile.webp',
     caption: 'Curating love in lavender boxes ?? Festive hampers and kitty party favors thoughtfully put together. Delivered across Delhi NCR.',
     likes: '589',
     comments: '39',

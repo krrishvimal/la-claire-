@@ -86,7 +86,7 @@ export function CustomOrderSection() {
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
-                src="/images/cake 2.jpg"
+                src="/images/cake2.webp"
                 alt="Vintage Piped Custom Cake"
                 fill
                 className="object-cover"

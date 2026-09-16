@@ -6,10 +6,10 @@ import { createWhatsAppUrl, generateGeneralEnquiryMessage } from '@/lib/whatsapp
 
 export default function EventsPage() {
   const eventTypes = [
-    { title: 'Intimate Weddings & Engagements', desc: 'Multi-tiered centerpiece cakes and individualized guest dessert boxes.', image: '/images/cake4.jpg' },
-    { title: 'Baby Showers & Welcomes', desc: 'Soft pastel themed dessert tables, mini cakes, and custom return gifts.', image: '/images/cake1.jpg' },
-    { title: 'Kitty Parties & High Teas', desc: 'Assorted Swiss roll bites, financiers, and host gift boxes.', image: '/images/792090809_18102240470260412_1110557466805258012_n.jpg' },
-    { title: 'Corporate Soirées & Client Gifting', desc: 'Branded luxury gift boxes with courier dispatch across Delhi NCR.', image: '/images/chocolate with strawberry.jpg' },
+    { title: 'Intimate Weddings & Engagements', desc: 'Multi-tiered centerpiece cakes and individualized guest dessert boxes.', image: '/images/cake4.webp' },
+    { title: 'Baby Showers & Welcomes', desc: 'Soft pastel themed dessert tables, mini cakes, and custom return gifts.', image: '/images/cake1.webp' },
+    { title: 'Kitty Parties & High Teas', desc: 'Assorted Swiss roll bites, financiers, and host gift boxes.', image: '/images/anushka_profile.webp' },
+    { title: 'Corporate Soirées & Client Gifting', desc: 'Branded luxury gift boxes with courier dispatch across Delhi NCR.', image: '/images/chocolate_strawberry.webp' },
   ];
 
   return (

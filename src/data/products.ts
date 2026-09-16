@@ -14,8 +14,8 @@ export const PRODUCTS: Product[] = [
     startingPrice: false,
     priceUnit: 'per roll (serves 4-6)',
     images: [
-      '/images/little slice of citrus swiss roll.webp',
-      '/images/chocolate swiss roll.jpg',
+      '/images/citrus_swiss_roll.webp',
+      '/images/chocolate_swiss_roll.webp',
     ],
     sizes: [
       { name: 'Full Roll (6 Slices)', price: 950, serves: '4-6 guests' },
@@ -45,8 +45,8 @@ export const PRODUCTS: Product[] = [
     startingPrice: false,
     priceUnit: 'per dessert tub (serves 2-3)',
     images: [
-      '/images/792090809_18102240470260412_1110557466805258012_n.jpg',
-      '/images/chocolate swiss roll.jpg',
+      '/images/anushka_profile.webp',
+      '/images/chocolate_swiss_roll.webp',
     ],
     sizes: [
       { name: 'Individual Tub (450g)', price: 850, serves: '2-3 guests' },
@@ -76,7 +76,7 @@ export const PRODUCTS: Product[] = [
     priceUnit: 'box of 6',
     images: [
       '/images/hazelnut_brown_butter_financiers.webp',
-      '/images/chocolate with strawberry.jpg',
+      '/images/chocolate_strawberry.webp',
     ],
     sizes: [
       { name: 'Petite Box (6 Pieces)', price: 850, serves: '2-3 guests' },
@@ -106,8 +106,8 @@ export const PRODUCTS: Product[] = [
     startingPrice: false,
     priceUnit: 'box of 9 berries',
     images: [
-      '/images/chocolate with strawberry.jpg',
-      '/images/792090809_18102240470260412_1110557466805258012_n.jpg',
+      '/images/chocolate_strawberry.webp',
+      '/images/anushka_profile.webp',
     ],
     sizes: [
       { name: 'Signature Box (9 Strawberries)', price: 1200, serves: '2-3 guests' },
@@ -137,8 +137,8 @@ export const PRODUCTS: Product[] = [
     startingPrice: false,
     priceUnit: 'per roll (serves 4-6)',
     images: [
-      '/images/chocolate swiss roll.jpg',
-      '/images/little slice of citrus swiss roll.webp',
+      '/images/chocolate_swiss_roll.webp',
+      '/images/citrus_swiss_roll.webp',
     ],
     sizes: [
       { name: 'Standard Roll (6 Slices)', price: 1050, serves: '4-6 guests' },
@@ -167,9 +167,9 @@ export const PRODUCTS: Product[] = [
     startingPrice: true,
     priceUnit: 'starting from 1 kg',
     images: [
-      '/images/cake3.jpg',
-      '/images/cake 2.jpg',
-      '/images/cake1.jpg',
+      '/images/cake3.webp',
+      '/images/cake2.webp',
+      '/images/cake1.webp',
     ],
     sizes: [
       { name: '0.5 kg (Bento / Petite)', price: 1450, serves: '3-4 guests' },
@@ -211,9 +211,9 @@ export const PRODUCTS: Product[] = [
     startingPrice: false,
     priceUnit: 'per curated hamper',
     images: [
-      '/images/la_claire_photoshoot_table.jpg',
-      '/images/792090809_18102240470260412_1110557466805258012_n.jpg',
-      '/images/chocolate with strawberry.jpg',
+      '/images/la_claire_story.webp',
+      '/images/anushka_profile.webp',
+      '/images/chocolate_strawberry.webp',
     ],
     sizes: [
       { name: 'Classic Lavender Hamper', price: 3200, serves: 'Gifting for 1-4' },
@@ -238,7 +238,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'MATILDA TUB',
     category: 'Dessert Tubs',
     price: 850,
-    image: '/images/792090809_18102240470260412_1110557466805258012_n.jpg',
+    image: '/images/anushka_profile.webp',
     description: 'Rich layered chocolate mousse, sponge & dark shavings',
   },
   {
@@ -247,7 +247,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'CITRUS ROLL',
     category: 'Dessert Rolls',
     price: 520,
-    image: '/images/little slice of citrus swiss roll.webp',
+    image: '/images/citrus_swiss_roll.webp',
     description: 'Fresh lemon curd & chantilly rolled sponge',
   },
   {
@@ -256,7 +256,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'CHOCO ROLL',
     category: 'Dessert Rolls',
     price: 580,
-    image: '/images/chocolate swiss roll.jpg',
+    image: '/images/chocolate_swiss_roll.webp',
     description: 'Dutch cocoa sponge with dark ganache',
   },
   {
@@ -265,7 +265,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'BERRIES BOX',
     category: 'Berries & Treats',
     price: 850,
-    image: '/images/chocolate with strawberry.jpg',
+    image: '/images/chocolate_strawberry.webp',
     description: 'Callebaut dipped fresh berries with 24k gold leaf',
   },
   {
@@ -292,7 +292,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'BENTO CAKE',
     category: 'Cakes',
     price: 850,
-    image: '/images/cake3.jpg',
+    image: '/images/cake3.webp',
     description: 'Mini chocolate truffle or vanilla berry cake with candle',
   },
   {
@@ -301,7 +301,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'FLORAL CUPCAKES',
     category: 'Cakes',
     price: 360,
-    image: '/images/cupcake1.jpg',
+    image: '/images/cupcake1.webp',
     description: 'Hand-piped lavender buttercream cupcakes',
   },
   {
@@ -310,7 +310,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'MANGO GATEAU',
     category: 'Cakes',
     price: 750,
-    image: '/images/cake 2.jpg',
+    image: '/images/cake2.webp',
     description: 'Seasonal Alfonso mango layers with whipped cream',
   },
   {
@@ -319,7 +319,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'SABLE COOKIES',
     category: 'Gourmet Jars',
     price: 450,
-    image: '/images/792090809_18102240470260412_1110557466805258012_n.jpg',
+    image: '/images/anushka_profile.webp',
     description: 'Melt-in-mouth vanilla sable tea biscuits',
   },
   {
@@ -328,7 +328,7 @@ export const HAMPER_BUILDER_ITEMS: HamperItem[] = [
     shortName: 'SOY CANDLE',
     category: 'Gourmet Jars',
     price: 450,
-    image: '/images/la_claire_photoshoot_table.jpg',
+    image: '/images/la_claire_story.webp',
     description: 'Hand-poured aromatic keepsake scented candle',
   },
 ];

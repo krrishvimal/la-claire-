@@ -16,7 +16,7 @@ export function BrandIntroduction() {
           <div className="lg:col-span-5 relative order-2 lg:order-1">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-xl border-4 border-white">
               <Image
-                src="/images/chocolate with strawberry.jpg"
+                src="/images/chocolate_strawberry.webp"
                 alt="Handcrafted Belgian Chocolate Berries"
                 fill
                 className="object-cover"

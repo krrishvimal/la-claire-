@@ -7,37 +7,37 @@ import { Sparkles } from 'lucide-react';
 export function ExperienceSection() {
   const pillars = [
     {
-      icon: '/images/features/357503718_191449423896556_2924519817396782192_n.jpg',
+      icon: '/images/features/feature_2.webp',
       title: 'Handcrafted Fresh Daily',
       subtitle: 'Small Batch Pastry',
       description: 'Slow-baked fresh to order in our Delhi NCR studio kitchen with pure European butter and zero artificial preservatives.',
     },
     {
-      icon: '/images/features/357395064_242411281914073_5697256933906770837_n.jpg',
+      icon: '/images/features/feature_1.webp',
       title: 'French Pastry Discipline',
       subtitle: 'Parisian Technique',
       description: 'From caramelized beurre noisette in our financiers to featherweight chiffon in our Swiss rolls, we honor true French craft.',
     },
     {
-      icon: '/images/features/357513582_861141185367400_4133984067366317222_n.jpg',
+      icon: '/images/features/feature_3.webp',
       title: 'Artisanal Purity & Craft',
       subtitle: 'Made With Love',
       description: 'Airy sponges, silky ganaches, and luscious fruit curds perfected with pure gourmet ingredients without compromise.',
     },
     {
-      icon: '/images/features/357646192_238574782363124_303901985810526328_n.jpg',
+      icon: '/images/features/feature_5.webp',
       title: 'Thoughtful Luxury Gifting',
       subtitle: 'Keepsake Packaging',
       description: 'Rigid signature lavender boxes adorned with satin ribbons, wax seals, and personalized handwritten calligraphy notes.',
     },
     {
-      icon: '/images/features/446688463_979912853850401_8434064920920865105_n.jpg',
+      icon: '/images/features/feature_6.webp',
       title: 'Chilled Delhi NCR Delivery',
       subtitle: 'Safe Climate Transit',
       description: 'Temperature-controlled logistics ensuring your delicate cakes, rolls, and hampers arrive in pristine bakery condition.',
     },
     {
-      icon: '/images/features/357645071_1265021110856255_5563155173470547506_n.jpg',
+      icon: '/images/features/feature_4.webp',
       title: 'Bespoke Celebration Styling',
       subtitle: 'Turnkey Events',
       description: 'Custom milestone celebration cakes, dessert tables, baby shower favors, kitty hampers, and one-on-one chef consultations.',

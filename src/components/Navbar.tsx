@@ -138,7 +138,7 @@ export function Navbar() {
               <Link href="/" prefetch={true} scroll={true} className="flex items-center gap-3.5 group">
                 <div className="relative w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden shadow-md border-2 border-brand-300/80 group-hover:scale-105 group-hover:border-brand-400 transition-all duration-300 shrink-0 bg-brand-500">
                   <Image
-                    src="/images/logo.jpg"
+                    src="/images/logo.webp"
                     alt="La Claire Patisserie Logo"
                     fill
                     className="object-cover"

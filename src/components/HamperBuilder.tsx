@@ -170,7 +170,7 @@ export function HamperBuilder() {
       tagline: itemsSummary,
       description: `Curated assortment: ${itemsSummary}`,
       price: selectedPlan.price,
-      images: ['/images/la_claire_photoshoot_table.jpg'],
+      images: ['/images/la_claire_story.webp'],
     };
 
     addToCart(

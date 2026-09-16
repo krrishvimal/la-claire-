@@ -33,7 +33,7 @@ export default function AboutPage() {
           <div className="lg:col-span-6 relative">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image
-                src="/images/cake3.jpg"
+                src="/images/cake3.webp"
                 alt="La Claire Patisserie Kitchen Craft"
                 fill
                 className="object-cover"

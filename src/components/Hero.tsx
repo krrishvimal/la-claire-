@@ -84,7 +84,7 @@ export function Hero() {
           <div className="lg:col-span-7">
             <div className="relative aspect-[16/9.5] sm:aspect-[16/9.2] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-white group">
               <Image
-                src="/images/la_claire_photoshoot_table.jpg"
+                src="/images/la_claire_story.webp"
                 alt="La Claire Patisserie Studio Photoshoot Table Spread"
                 fill
                 priority
